@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Folio</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        #container1{
+            height: 600px;
+            width: 1400px;
+            background-image: url(https://media.istockphoto.com/id/1130938108/photo/male-hand-holding-smartphone-businessman-using-laptop-computer-and-digital-tablet-while.jpg?s=612x612&w=0&k=20&c=LTToI8ouLewJVIa0AcSUSENkkU2iqjfFxeh4cb9wO1k=);
+            background-size: cover;
+            background-position: center;
+        }
+        #navbar{
+            height: 70px;
+            background-color: black;
+            display: flex;
+            position: sticky;
+            top: 0px;
+        }
+        .logo img{
+            height: 50px;
+            margin-left: 50px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .icons{
+            margin-left: 350px;
+        }
+        ul{
+            color: white;
+            display: flex;
+            list-style: none;
+            
+        }
+        li{
+           padding-right: 50px;
+           padding-top: 20px; 
+        }
+        .home{
+            color: gray;
+        }
+        #span1{
+            padding-top: 20px;
+            padding-left: 250px;
+        }
+        .about{
+            margin-left: 100px;
+            padding-top: 100px;
+        }
+        .hello1{
+            font-size: 25px;
+            color: black;
+            text-shadow: 1px 0px 0px slid gray;
+            padding-top: 20px;
+        }
+        .hello2{
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 1px 01px gray;
+            padding-bottom: 18pxpx;
+        }
+        #mybio{
+            height: 50px;
+            width:450px ;
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            text-indent: 15px;
+            padding-top: 5px; 
+        }
+        .pbio{
+            word-spacing: 2px;
+        }
+        strong{
+            color: gray;
+        }
+        #button1{
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+            border: solid;
+            margin-left: 250px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 20px;
+        }
+        #myimg{
+            height: 200px;
+            width: 200px;
+            border: solid;
+        }
+        #container2{
+            height: 400px;
+            width: 1400px;
+            border: solid;
+            display: flex;
+           background-color: black;
+          
+
+        }
+        #con1{
+            height: 300px;
+            width: 600px;
+            border: solid;
+            margin-top: 50px;
+            margin-left: 40px;
+            margin-right: 20px;
+           
+           
+        }
+        #con2{
+            height: 300px;
+            width: 600px;
+            border: solid;
+            margin-top: 50px;
+           margin-right: 40px;
+        }
+        #imgimg{
+            height: 150px;
+            width: 150px;
+            
+            margin-top: 10px;
+            margin-left: 220px;
+            background-size: cover;
+            background-position: center;
+            background-image: url(./public/assets/IMG_20210916_002827211\ -\ Copy\ \(6\)\ -\ Copy.jpg); 
+            border-radius: 100px;
+        }
+        h2{
+            text-align: center;
+            padding-top: 10px;
+            color: gray;
+        }
+        #aboutp2{
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            padding-bottom: 10px;
+            padding-top: 12px;
+        }
+        #button2{
+            margin-top: 10px;
+            width: 100px;
+            height: 25px;
+            margin-left: 250px;
+        }
+        .h21{
+            color: red;
+            padding-top: 30px;
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        details{
+            text-indent: 10px;
+            margin-left: 200px;
+            font-size: 20px;
+            color: white;
+        }
+        summary{
+            padding-bottom: 3px;
+        }
+        #p-p-p{
+            color: rgb(232, 212, 212);
+            font-size: 20px;
+            text-align: center;
+        }
+        #container3{
+            height: 100px;
+            width: 300px;
+            background-color: black;
+            position: fixed;
+            bottom: 0px;
+            border: white;
+            margin-left: 1020px;
+        }
+        #p-p-2{
+            text-align: left;
+            padding-left: 70px;
+            padding-top: 10px;
+            color: white;
+            text-shadow: 1px 0px 1px gray;
+        }
+        .hello01{
+            color: grey;
+            font-size: 30px;
+            margin-left: 25px;
+        }
+        #container4{
+            height: 50px;
+            width: 200px;
+            margin-left: 70px;
+            padding-top: 5px;
+            background-color: rgb(49, 46, 46);
+        }
+        #point3{
+           font-size: 25px;
+           text-align: center;
+           height: 100px;
+           width: 200px;
+           color: white;
+        }
+        #container5{
+            height: 50px;
+            width: 200px;
+            margin-left: 200px;
+            padding-top: 5px;
+            background-color: rgb(49, 46, 46);
+        }
+        #point4{
+           font-size: 25px;
+           text-align: center;
+           height: 100px;
+           width: 200px;
+           color: white;
+        }
+        #container6{
+            height: 50px;
+            width: 200px;
+            margin-left: 300px;
+            padding-top: 5px;
+            background-color: rgb(49, 46, 46);
+        }
+        #point5{
+           font-size: 25px;
+           text-align: center;
+           height: 100px;
+           width: 200px;
+          color: white;
+          
+        }
+        #container7{
+           height: 50px;
+           width: 1400px;
+           background-color: #000000;
+           
+        }
+        h4{
+            color: white;
+            font-weight: lighter;
+            word-spacing: 2px;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        footer{
+            height: 200px;
+            width: 700px;
+            border: solid;
+            display: flex;
+            background-color: #000000;
+            margin-left: 50px;
+            border-radius: 5px;
+        }
+        #footerdiv1{
+            height: 150px;
+            width: 400px;
+            border: solid white;
+            border-radius: 5px;
+            margin-left: 50px;
+            margin-top: 25px;
+        }
+        input{
+            margin-top: 6px;
+            margin-left: 70px;
+        }
+        button{
+            width: 80px;
+            margin-top: 7px;
+            margin-left: 110px;
+        }
+        #footerdiv2{
+            height: 150px;
+            width: 400px;
+           
+            border-radius: 5px;
+            margin-left: 50px;
+            margin-top: 25px;
+
+        }
+        address{
+            color: white;
+            padding-left: 30px;
+            padding-top: 25px;
+        }
+       
+       
+        
+       
+       
+       
+       
+
+       
+      
+        
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <nav id="navbar">
+           <div class="logo">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJMERUJSyUthYAXV-g80Y--KOkGomFexwj0w&usqp=CAU">
+           </div>
+           <div class="icons">
+           <ul>
+              <li class="home">Homes</li>
+              <li>Pages</li> 
+              <li>About</li>
+              <li>Gallery</li>
+              <br>
+              <span id="span1"><i class="bi bi-search"></i></span>
+           </ul>
+           </div>
+        </nav>
+        <div class="about">
+            <h1 class="hello1">Hello I am</h1>
+            <br>
+            <h1 class="hello2">Dawood Suleman</h1>
+            <br>
+            <div id="mybio">
+            <p class="pbio">I am <strong> Experinced Fullstack Engineer</strong> I know how we have to </p>
+            <p class="pbio">work with <strong>Client</strong>.I have done more <strong>Contributin on Technology</strong></p>
+            </div>
+        </div>
+        <br>
+        <button id="button1">Know More</button>
+    </div>
+    <br>
+    <br>
+    <div id="container2">
+       <div id="con1">
+          <p id="p-p-p">With 10 years of Experince</p>
+          <h2 class="h21">I am expert in</h2>
+          <details>
+            <summary>Frontend</summary>
+            <dt>Web Development</dt>
+            <dl>Html -Css</dl>
+            <dl>Bootstrap</dl>
+            <dl>Tailwind Css</dl>
+            <dl>Javascript</dl>
+            <dl>React Js</dl>
+          </details>
+          <details>
+            <summary>Backend</summary>
+            <td>Backend</td>
+            <dl>PHP</dl>
+            <dl>Django</dl>
+            <dl>nodejs</dl>
+            <dl>Expressjs</dl>
+          </details>
+          <details>
+            <summary>Serverside</summary>
+            <td>Serverside</td>
+            <dl>MySql</dl>
+            <dl>Mango DB</dl>
+          </details>
+          <details>
+            <summary>Testing</summary>
+            <dt>Testing</dt>
+             <dl>Selinium</dl>
+             <dl>Watir</dl>
+             <dl>SoupUI</dl>
+          </details>
+          <details>
+            <summary>Debugging</summary>
+            <td>Debugging</td>
+            <dl>TestSigma</dl>
+            <dl>AirBrake</dl>
+            <dl>GDB</dl>
+          </details>
+          <details>
+            <summary>Deployment</summary>
+            <dt>Deplyment</dt>
+             <dl>Aws code Deploy</dl>
+             <dl>Jenkins</dl>
+             <dl>Git lAb</dl>
+          </details>
+          <details>
+            <summary>Development</summary>
+          </details>
+          <details>
+            <summary>Maintanence</summary>
+          </details>
+       </div>
+       <div id="con2">
+           <div id="imgimg">
+           </div>
+           <h2>Experinced Fullstack Engineer</h2>
+           <p id="aboutp2">These cases are perfectly simple and easy to distinguish. In a free hour,
+            when our power<br> of choice is untrammelled and when nothing prevents
+            our being able to do what we like best.</p>
+            <button id="button2">Opinment</button>
+       </div>
+    </div>
+    <br>
+    <br>
+    <div id="container3">
+        <div>
+         <p id="p-p-2">
+            Visit & Know More
+         </p>
+        </div>
+        <uL>
+            <li class="hello01"><i class="bi bi-instagram"></i></li>
+            <li class="hello01"><i class="bi bi-facebook"></i></li>
+            <li class="hello01"><i class="bi bi-linkedin"></i></li>
+        </uL>
+    </div>
+    <br>
+    <div id="container4">
+    <p id="point3">See Testimonials</p>
+    </div>
+    <br>
+    <br>
+    <div id="container5">
+        <p id="point4">See Projects</p>
+    </div>
+    <br>
+    <br>
+    <div id="container6">
+        <p id="point5">Visit gitHub</p>
+    </div>
+    <br>
+    <br>
+    <div id="container7">
+        <p id="point7">
+          <h4>You have always <strong>" Unique Solution " </strong> when you trust Expert</h4>
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div id="footerdiv1">
+        <input type="Name" placeholder=" Name">
+        <br>
+        <br>
+        <input type="email" placeholder=" Email">
+        <br>
+        <br>
+        <input type="search" placeholder=" Message">
+        <br>
+        <button>Send</button>
+        </div>
+        <br>
+        <br>
+        <div id="footerdiv2">
+             <address>
+               Street 201,
+               <br>
+               MAin Building,
+               <br>Mark Garden, 
+               <br>Gachibowli,
+               <br> Hyderabad, Telangana.
+             </address>
+        </div>
+    </footer>
+</body>
+</html>
